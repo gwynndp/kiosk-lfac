@@ -1,0 +1,20 @@
+# Compiled Files for distribution
+dist/
+
+# packages
+node_modules
+
+# Mac Files
+.DS_store
+logs
+*.log
+
+# Debug log from npm
+npm-debug.log
+
+# Test files
+index-test.html
+dist/index-test.html
+app/index-test.html
+app/index-dist.html
+
