@@ -1,11 +1,10 @@
 import React from 'react';
 
-// VIDEO CARD
-export default function VideoCard(props) {
+export default function VideoCard(video) {
   return (
     <div>
-      <h1>{props.name}</h1>
-      <iframe src={`${props.src}`} frameBorder="1" allowFullScreen title={`iframe for ${props.name}`} />
+      <h1>{video.name}</h1>
+      <iframe src={`${video.src}`} frameBorder="1" allowFullScreen title={`iframe for ${video.name}`} />
     </div>
   );
 }
