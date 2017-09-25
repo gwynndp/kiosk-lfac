@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   context: __dirname,
-  entry: './app/page.jsx',
+  entry: './app/index.jsx',
   devtool: 'cheap-eval-source-map',
   output: {
     path: path.join(__dirname, 'dist'),
@@ -20,7 +20,13 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
-        loader: 'babel-loader'
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['env']
+          }
+        }
       }
     ]
   }
