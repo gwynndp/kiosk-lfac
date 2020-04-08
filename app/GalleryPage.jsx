@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import SideBar from './Sidebar';
-import MainNav from './MainNav';
-import Gallery from './Gallery';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import SideBar from "./Sidebar";
+import MainNav from "./MainNav";
+import Gallery from "./Gallery";
 
 const GalleryWrapper = styled.div`
   display: flex;
@@ -21,27 +21,26 @@ const GalleryHeader = styled.header`
   font-size: 24px;
 `;
 
-export default function GalleryPage(props) {
+export default function GalleryPage({ videos, handleVideoCardClick }) {
   return (
-    <React.Fragment>
-      <MainNav gallery='true' />
+    <>
+      <MainNav gallery="true" />
       <GalleryWrapper>
         <GalleryHeader>
           <h1>Meet the People</h1>
         </GalleryHeader>
-        <Gallery
-          videos={props.videos}
-          handleVideoCardClick={props.handleVideoCardClick}
-        />
+        <Gallery videos={videos} handleVideoCardClick={handleVideoCardClick} />
       </GalleryWrapper>
       <SideBar />
-    </React.Fragment>
+    </>
   );
 }
 
 GalleryPage.propTypes = {
   videos: PropTypes.arrayOf(
-    PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+    PropTypes.objectOf(
+      PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+    )
   ).isRequired,
-  handleVideoCardClick: PropTypes.func.isRequired,
+  handleVideoCardClick: PropTypes.func.isRequired
 };

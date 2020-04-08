@@ -16,5 +16,33 @@ exports[`should render a MainNav 1`] = `
       width="100px"
     />
   </a>
+  <button
+    className="sc-AykKE gbAOGp"
+    id="prev"
+    onClick={[Function]}
+  >
+    <div>
+      PREV
+    </div>
+    <img
+      alt="scroll up"
+      src="images/kiosk_arrow_up.png"
+      width="100px"
+    />
+  </button>
+  <button
+    className="sc-AykKE gbAOGp"
+    id="next"
+    onClick={[Function]}
+  >
+    <img
+      alt="scroll down"
+      src="images/kiosk_arrow_down.png"
+      width="100px"
+    />
+    <div>
+      NEXT
+    </div>
+  </button>
 </div>
 `;

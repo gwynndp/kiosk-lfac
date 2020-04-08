@@ -1,7 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-//import { render } from 'enzyme';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
 
 const StyledVideoView = styled.div`
   background-color: white;
@@ -42,40 +41,44 @@ export default class VideoView extends React.Component {
   }
 
   componentDidMount() {
+    const { video, videos, updateCurrentVideo } = this.props;
     this.setState({
-      videos: this.props.videos,
-      video: this.props.video
+      videos,
+      video,
+      updateCurrentVideo
     });
   }
 
   handlePrevNext(diff) {
-    const currIndex = this.state.video.id;
+    const { video, videos, updateCurrentVideo } = this.state;
+    const curr = video.id;
     let newIndex = 0;
     if (diff > 0) {
-      newIndex = currIndex < this.state.videos.length - 1 ? currIndex + 1 : 0;
+      newIndex = curr < videos.length - 1 ? curr + 1 : 0;
     } else {
-      newIndex = currIndex > 0 ? currIndex - 1 : this.state.videos.length - 1;
+      newIndex = curr > 0 ? curr - 1 : videos.length - 1;
     }
     this.setState(
       {
-        video: this.state.videos[newIndex]
+        video: videos[newIndex]
       },
-      () => this.props.updateCurrentVideo(this.state.video)
+      () => updateCurrentVideo(video)
     );
   }
 
   render() {
+    const { video } = this.props;
     return (
       <StyledVideoView>
-        <h1>{this.props.video.name}</h1>
+        <h1>{video.name}</h1>
         {/* WHY DOESN'T THIS WORK
         <video src={video.src} style={{ width: 850 +'px', height: 480+'px'}} allowFullScreen title={`iframe for YouTube video ${video.name}`} /> */}
         <iframe
-          src={this.props.video.src}
-          style={{ width: 850 + 'px', height: 480 + 'px' }}
+          src={video.src}
+          style={{ width: `${850}px`, height: `${480}px` }}
           frameBorder="1"
           allowFullScreen
-          title={`iframe for YouTube video ${this.props.video.name}`}
+          title={`iframe for YouTube video ${video.name}`}
         />
         <Button onClick={() => this.handlePrevNext(-1)}>Previous</Button>
         <Button onClick={() => this.handlePrevNext(1)}>Next</Button>
@@ -85,6 +88,13 @@ export default class VideoView extends React.Component {
 }
 
 VideoView.propTypes = {
-  video: PropTypes.objectOf(),
-  videos: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.number]))
+  video: PropTypes.objectOf(
+    PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.func])
+  ).isRequired,
+  videos: PropTypes.arrayOf(
+    PropTypes.objectOf(
+      PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.func])
+    )
+  ).isRequired,
+  updateCurrentVideo: PropTypes.func.isRequired
 };

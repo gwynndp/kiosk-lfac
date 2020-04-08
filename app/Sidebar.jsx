@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import Logos from './Logos';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import Logos from "./Logos";
 
 const Wrapper = styled.div`
   display: flex;
