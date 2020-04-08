@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import MainNav from './MainNav';
-import Sidebar from './Sidebar';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import MainNav from "./MainNav";
+import Sidebar from "./Sidebar";
 
 const PageWrapper = styled.div`
   display: flex;
@@ -33,8 +33,8 @@ const Content = styled.div`
 
 export default function TextPage({ page }) {
   return (
-    <React.Fragment>
-      <MainNav gallery='false' />
+    <>
+      <MainNav gallery="false" />
       <PageWrapper>
         <PageHeader>
           <h1>{page.title}</h1>
@@ -42,10 +42,18 @@ export default function TextPage({ page }) {
         <Content>{page.content}</Content>
       </PageWrapper>
       <Sidebar />
-    </React.Fragment>
+    </>
   );
 }
 
 TextPage.propTypes = {
-  page: PropTypes.objectOf(PropTypes.oneOfType([PropTypes.string])),
+  page: PropTypes.objectOf(PropTypes.oneOfType([PropTypes.string]))
+};
+
+TextPage.defaultProps = {
+  page: {
+    title: "Loading",
+    content:
+      "Sorry for the inconveniene!  The page is taking some time to load."
+  }
 };

@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import GalleryCard from './GalleryCard';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import GalleryCard from "./GalleryCard";
 
 const StyledGallery = styled.div`
   background-color: rgba(255, 255, 255, 0.5);
@@ -15,11 +15,12 @@ const StyledGallery = styled.div`
 `;
 
 export default function Gallery({ videos, handleVideoCardClick }) {
+  console.log('INSIDE GALLERY: ', videos[0]);
   return (
-    <StyledGallery id='gallery'>
-      {videos.map((video) => {
+    <StyledGallery id="gallery">
+      {videos.map(video => {
         return (
-          <Link to='/video' style={{ textDecoration: 'none', color: 'black' }}>
+          <Link to="/video" style={{ textDecoration: "none", color: "black" }}>
             <GalleryCard
               key={video.id * 2}
               video={video}
@@ -28,7 +29,7 @@ export default function Gallery({ videos, handleVideoCardClick }) {
           </Link>
         );
       })}
-      <div className='spacer' style={{ flexGrow: '1' }} />
+      <div className="spacer" style={{ flexGrow: "1" }} />
     </StyledGallery>
   );
 }
@@ -37,5 +38,5 @@ Gallery.propTypes = {
   videos: PropTypes.arrayOf(
     PropTypes.oneOfType([PropTypes.string, PropTypes.number])
   ).isRequired,
-  handleVideoCardClick: PropTypes.func.isRequired,
+  handleVideoCardClick: PropTypes.func.isRequired
 };

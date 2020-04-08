@@ -12,9 +12,9 @@ test('should render a GalleryCard', () => {
       category: 'people',
       name: 'Ashley Sanchez',
       src: 'videos/Ashley-Sanchez.mp4',
-      img: 'images/videos/Ashley-Sanchez.jpg',
+      img: 'images/videos/Ashley-Sanchez.jpg'
     },
-    handleVideoCardClick: () => {},
+    handleVideoCardClick: () => {}
   };
   const tree = renderer
     .create(

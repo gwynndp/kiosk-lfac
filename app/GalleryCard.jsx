@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
 
-const StyledTitle = styled('h1')`
+const StyledTitle = styled("h1")`
   display: flex;
   align-items: flex-end;
   font-size: 18px;
@@ -12,7 +12,7 @@ const StyledTitle = styled('h1')`
   border-bottom: 1px solid black;
 `;
 
-const Image = styled('img')`
+const Image = styled("img")`
   width: 190px;
   height: 250px;
 `;
@@ -41,5 +41,9 @@ GalleryCard.propTypes = {
   video: PropTypes.objectOf(
     PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.func])
   ),
-  handleVideoCardClick: PropTypes.func.isRequired,
+  handleVideoCardClick: PropTypes.func.isRequired
+};
+
+GalleryCard.defaultProps = {
+  video: null
 };

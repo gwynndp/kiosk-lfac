@@ -1,13 +1,13 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import renderer from 'react-test-renderer';
-import MainNav from '../MainNav';
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import renderer from "react-test-renderer";
+import MainNav from "../MainNav";
 
-test('should render a MainNav', () => {
+test("should render a MainNav", () => {
   const tree = renderer
     .create(
       <Router>
-        <MainNav />
+        <MainNav gallery="true" />
       </Router>
     )
     .toJSON();

@@ -11,47 +11,44 @@ test('should render a Gallery', () => {
         category: 'people',
         name: 'Ashley Sanchez',
         src: 'videos/Ashley-Sanchez.mp4',
-        img: 'images/videos/Ashley-Sanchez.jpg',
+        img: 'images/videos/Ashley-Sanchez.jpg'
       },
       {
         id: 5,
         category: 'people',
         name: 'Jackie Rose Wilson',
         src: 'videos/Jackie-Rose-Wilson.mp4',
-        img: 'images/videos/Jackie-Rose-Wilson.jpg',
+        img: 'images/videos/Jackie-Rose-Wilson.jpg'
       },
       {
         id: 6,
         category: 'people',
         name: 'Jude Gibson Byers',
         src: 'videos/Jude-Gibson-Byers.mp4',
-        img: 'images/videos/Jude-Gibson-Byers.jpg',
+        img: 'images/videos/Jude-Gibson-Byers.jpg'
       },
       {
         id: 7,
         category: 'fires',
         name: 'Kathryn Hecht',
         src: 'videos/Kathryn-Hecht.mp4',
-        img: 'images/videos/Kathryn-Hecht.jpg',
+        img: 'images/videos/Kathryn-Hecht.jpg'
       },
       {
         id: 8,
         category: 'fires',
         name: 'Leanne Fogg',
         src: 'videos/Leanne-Fogg.mp4',
-        img: 'images/videos/Leanne-Fogg.jpg',
-      },
+        img: 'images/videos/Leanne-Fogg.jpg'
+      }
     ],
     showVideoView: false,
-    handleVideoCardClick: () => {},
+    handleVideoCardClick: () => {}
   };
   const tree = renderer
     .create(
       <Router>
-        <Gallery
-          videos={props.videos}
-          handleVideoCardClick={props.handleVideoCardClick}
-        />
+        <Gallery videos={props.videos} handleVideoCardClick={props.handleVideoCardClick} />
       </Router>
     )
     .toJSON();

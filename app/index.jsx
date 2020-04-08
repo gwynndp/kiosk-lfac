@@ -1,13 +1,13 @@
-import React from 'react';
-import { render } from 'react-dom';
-import axios from 'axios';
-import styled from 'styled-components';
+import React from "react";
+import { render } from "react-dom";
+import axios from "axios";
+import styled from "styled-components";
 // import SVG from 'react-inlinesvg';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Home from './Home';
-import TextPage from './TextPage';
-import GalleryPage from './GalleryPage';
-import VideoView from './VideoView';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Home from "./Home";
+import TextPage from "./TextPage";
+import GalleryPage from "./GalleryPage";
+import VideoView from "./VideoView";
 
 const Footer = styled.footer`
   background-color: red;
@@ -31,90 +31,100 @@ class Main extends React.Component {
       currentVideo: null,
       showVideoView: false,
       updateCurrentVideo: this.updateCurrentVideo.bind(this),
-      handleVideoCardClick: this.handleVideoCardClick.bind(this),
+      handleVideoCardClick: this.handleVideoCardClick.bind(this)
     };
   }
 
   componentDidMount() {
     const context = this;
     axios
-      .get('/jsontest')
-      .then((res) => {
+      .get("/jsontest")
+      .then(res => {
         context.setState(
           {
             pages: res.data.pages,
-            videos: res.data.videos,
+            videos: res.data.videos
           },
           () => {
-            console.log('ON LOAD', this.state);
+            console.log("ON LOAD", this.state);
           }
         );
       })
-      .catch((err) => {
+      .catch(err => {
         throw err;
       });
   }
 
   updateCurrentVideo(vidIndex) {
-    this.setState({
-      currentVideo: this.state.videos[vidIndex],
-    });
+    this.setState(state => ({ currentVideo: state.videos[vidIndex] }));
   }
 
   handleVideoCardClick(vid) {
     this.setState({
-      currentVideo: vid,
+      currentVideo: vid
     });
   }
 
   render() {
+    const {
+      videos,
+      pages,
+      currentVideo,
+      showVideoView,
+      handleVideoCardClick,
+      updateCurrentVideo
+    } = this.state;
+    const { lfac, jackdemayo, schools, vom } = pages;
+
+    if (!videos[0]) {
+      return <div>Hold tight while videos are being fetched...</div>;
+    }
+
     return (
       <div
-        id='content-wrapper'
-        style={{ display: 'flex', width: `100%`, height: `100%` }}
+        id="content-wrapper"
+        style={{ display: "flex", width: `100%`, height: `100%` }}
       >
         {/* <MainNav /> */}
         <Switch>
-          <Route path='/lfac'>
-            <TextPage page={this.state.pages['lfac']} />
+          <Route path="/lfac">
+            <TextPage page={lfac} />
           </Route>
-          <Route path='/jackdemayo'>
-            <TextPage page={this.state.pages['jackdemayo']} />
+          <Route path="/jackdemayo">
+            <TextPage page={jackdemayo} />
           </Route>
-          <Route path='/schools'>
-            <TextPage page={this.state.pages['schools']} />
+          <Route path="/schools">
+            <TextPage page={schools} />
           </Route>
-          <Route path='/vom'>
-            <TextPage page={this.state.pages['vom']} />
+          <Route path="/vom">
+            <TextPage page={vom} />
           </Route>
-          <Route path='/fires'>
+          <Route path="/fires">
             <GalleryPage
-              videos={this.state.videos.filter(
-                (vid) => vid.category === 'fires'
-              )}
-              showVideoView={this.state.showVideoView}
-              handleVideoCardClick={this.state.handleVideoCardClick}
+              videos={videos.filter(vid => vid.category === "fires")}
+              showVideoView={showVideoView}
+              handleVideoCardClick={handleVideoCardClick}
             />
           </Route>
-          <Route path='/schools/:school'>
+          <Route path="/schools/:school">
             <GalleryPage
-              videos={this.state.videos}
-              showVideoView={this.state.showVideoView}
-              handleVideoCardClick={this.state.handleVideoCardClick}
+              videos={videos}
+              showVideoView={showVideoView}
+              handleVideoCardClick={handleVideoCardClick}
             />
           </Route>
-          <Route path='/video'>
+          <Route path="/video">
             <VideoView
-              video={this.state.currentVideo}
-              listLength={this.state.videos.length}
-              updateCurrentVideo={this.state.updateCurrentVideo}
+              video={currentVideo}
+              listLength={videos.length}
+              updateCurrentVideo={updateCurrentVideo}
             />
           </Route>
-          <Route exact path='/'>
+          <Route exact path="/">
             <Home
-              videos={this.state.videos}
-              showVideoView={this.state.showVideoView}
-              handleVideoCardClick={this.state.handleVideoCardClick}
+              videos={videos}
+              showVideoView={showVideoView}
+              handleVideoCardClick={handleVideoCardClick}
             />
           </Route>
         </Switch>
@@ -129,5 +139,5 @@ render(
   <BrowserRouter>
     <Main />
   </BrowserRouter>,
-  document.getElementById('app')
+  document.getElementById("app")
 );
