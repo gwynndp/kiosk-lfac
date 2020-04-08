@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a Sidebar 1`] = `
+<div
+  className="sc-AykKC gVzywQ"
+>
+  <div
+    id="logos-wrapper"
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "space-between",
+        "padding": "0 10px 20px 0",
+      }
+    }
+  >
+    <img
+      alt="Cloverdale City logo"
+      src="images/cloverdale-city-logo.png"
+      width="100%"
+    />
+    <img
+      alt="Cloverdale High School logo"
+      src="images/cloverdale-hs-logo.png"
+      width="100%"
+    />
+    <img
+      alt="Listening For a Change logo"
+      src="images/lfac_logo_black.gif"
+      width="100%"
+    />
+  </div>
+  <a
+    className="sc-AykKD bhXdAw"
+    href="/lfac"
+    onClick={[Function]}
+  >
+    <span>
+      Listening for a Change
+    </span>
+  </a>
+  <a
+    className="sc-AykKD bhXdAw"
+    href="/schools"
+    onClick={[Function]}
+  >
+    <span>
+      Schools
+    </span>
+  </a>
+  <a
+    className="sc-AykKD bhXdAw"
+    href="/fires"
+    onClick={[Function]}
+  >
+    <span>
+      Fire Stories
+    </span>
+  </a>
+  <a
+    className="sc-AykKD bhXdAw"
+    href="/jackdemayo"
+    onClick={[Function]}
+  >
+    <span>
+      Remembering Jack DeMayo
+    </span>
+  </a>
+  <a
+    className="sc-AykKD bhXdAw"
+    href="/vom"
+    onClick={[Function]}
+  >
+    <span>
+      Valley of the Moon
+    </span>
+  </a>
+</div>
+`;

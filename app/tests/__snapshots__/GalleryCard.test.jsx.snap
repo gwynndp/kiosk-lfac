@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a GalleryCard 1`] = `
+<div
+  className="sc-AykKE jDVYoJ"
+  onClick={[Function]}
+>
+  <h1
+    className="sc-AykKC flIKka"
+  >
+    Ashley Sanchez
+  </h1>
+  <img
+    alt="Video titled Ashley Sanchez"
+    className="sc-AykKD kcIegN"
+    src="images/videos/Ashley-Sanchez.jpg"
+  />
+</div>
+`;

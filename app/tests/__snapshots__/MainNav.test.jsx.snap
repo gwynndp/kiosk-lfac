@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a MainNav 1`] = `
+<div
+  className="sc-AykKC duquAX"
+>
+  <a
+    className="sc-AykKD dWbVqE"
+    exact="true"
+    href="/"
+    onClick={[Function]}
+  >
+    <img
+      alt="home"
+      src="images/kiosk_home.png"
+      width="100px"
+    />
+  </a>
+</div>
+`;

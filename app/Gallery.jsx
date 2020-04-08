@@ -1,6 +1,41 @@
 import React from 'react';
-import VideoCard from './VideoCard';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import GalleryCard from './GalleryCard';
 
-export default function Gallery({ videos }) {
-  return <div>{videos.map(video => <VideoCard key={video.name} name={video.name} src={video.src} />)}</div>;
+const StyledGallery = styled.div`
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  height: 580px; //auto; //580px for Firefox, get element.clientHeight?
+  overflow: scroll;
+`;
+
+export default function Gallery({ videos, handleVideoCardClick }) {
+  return (
+    <StyledGallery id='gallery'>
+      {videos.map((video) => {
+        return (
+          <Link to='/video' style={{ textDecoration: 'none', color: 'black' }}>
+            <GalleryCard
+              key={video.id * 2}
+              video={video}
+              handleVideoCardClick={handleVideoCardClick}
+            />
+          </Link>
+        );
+      })}
+      <div className='spacer' style={{ flexGrow: '1' }} />
+    </StyledGallery>
+  );
 }
+
+Gallery.propTypes = {
+  videos: PropTypes.arrayOf(
+    PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  ).isRequired,
+  handleVideoCardClick: PropTypes.func.isRequired,
+};

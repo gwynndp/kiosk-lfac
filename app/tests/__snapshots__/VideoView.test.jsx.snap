@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a VideoView 1`] = `
+Array [
+  <div
+    className="sc-AykKC duquAX"
+  >
+    <a
+      className="sc-AykKD dWbVqE"
+      exact="true"
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="home"
+        src="images/kiosk_home.png"
+        width="100px"
+      />
+    </a>
+  </div>,
+  <div
+    className="sc-AykKH eNnoAM"
+  >
+    <h1
+      style={
+        Object {
+          "fontSize": "42px",
+        }
+      }
+    >
+      Ashley Sanchez
+    </h1>
+    <video
+      allowFullScreen={true}
+      autoPlay={true}
+      controls={true}
+      poster="images/videos/Ashley-Sanchez.jpg"
+      src="videos/Ashley-Sanchez.mp4"
+      style={
+        Object {
+          "flexGrow": "1",
+          "flexShrink": "1",
+          "width": "100%",
+        }
+      }
+      title="Video interview of Ashley Sanchez"
+    />
+    <div
+      style={
+        Object {
+          "alignSelf": "stretch",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-around",
+          "margin": "20px",
+        }
+      }
+    >
+      <button
+        className="sc-AykKI fdsJZZ"
+        onClick={[Function]}
+      >
+        Previous
+      </button>
+      <button
+        className="sc-AykKI fdsJZZ"
+        onClick={[Function]}
+      >
+        Next
+      </button>
+    </div>
+  </div>,
+  <div
+    className="sc-AykKF cvNFcn"
+  >
+    <div
+      id="logos-wrapper"
+      style={
+        Object {
+          "display": "flex",
+          "flexDirection": "column",
+          "justifyContent": "space-between",
+          "padding": "0 10px 20px 0",
+        }
+      }
+    >
+      <img
+        alt="Cloverdale City logo"
+        src="images/cloverdale-city-logo.png"
+        width="100%"
+      />
+      <img
+        alt="Cloverdale High School logo"
+        src="images/cloverdale-hs-logo.png"
+        width="100%"
+      />
+      <img
+        alt="Listening For a Change logo"
+        src="images/lfac_logo_black.gif"
+        width="100%"
+      />
+    </div>
+    <a
+      className="sc-AykKG esZqhL"
+      href="/lfac"
+      onClick={[Function]}
+    >
+      <span>
+        Listening for a Change
+      </span>
+    </a>
+    <a
+      className="sc-AykKG esZqhL"
+      href="/schools"
+      onClick={[Function]}
+    >
+      <span>
+        Schools
+      </span>
+    </a>
+    <a
+      className="sc-AykKG esZqhL"
+      href="/fires"
+      onClick={[Function]}
+    >
+      <span>
+        Fire Stories
+      </span>
+    </a>
+    <a
+      className="sc-AykKG esZqhL"
+      href="/jackdemayo"
+      onClick={[Function]}
+    >
+      <span>
+        Remembering Jack DeMayo
+      </span>
+    </a>
+    <a
+      className="sc-AykKG esZqhL"
+      href="/vom"
+      onClick={[Function]}
+    >
+      <span>
+        Valley of the Moon
+      </span>
+    </a>
+  </div>,
+]
+`;

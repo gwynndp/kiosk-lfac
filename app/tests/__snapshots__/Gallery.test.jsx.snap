@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a Gallery 1`] = `
+<div
+  className="sc-AykKF gqeRDE"
+  id="gallery"
+>
+  <a
+    href="/video"
+    onClick={[Function]}
+    style={
+      Object {
+        "color": "black",
+        "textDecoration": "none",
+      }
+    }
+  >
+    <div
+      className="sc-AykKE jDVYoJ"
+      onClick={[Function]}
+    >
+      <h1
+        className="sc-AykKC flIKka"
+      >
+        Ashley Sanchez
+      </h1>
+      <img
+        alt="Video titled Ashley Sanchez"
+        className="sc-AykKD kcIegN"
+        src="images/videos/Ashley-Sanchez.jpg"
+      />
+    </div>
+  </a>
+  <a
+    href="/video"
+    onClick={[Function]}
+    style={
+      Object {
+        "color": "black",
+        "textDecoration": "none",
+      }
+    }
+  >
+    <div
+      className="sc-AykKE jDVYoJ"
+      onClick={[Function]}
+    >
+      <h1
+        className="sc-AykKC flIKka"
+      >
+        Jackie Rose Wilson
+      </h1>
+      <img
+        alt="Video titled Jackie Rose Wilson"
+        className="sc-AykKD kcIegN"
+        src="images/videos/Jackie-Rose-Wilson.jpg"
+      />
+    </div>
+  </a>
+  <a
+    href="/video"
+    onClick={[Function]}
+    style={
+      Object {
+        "color": "black",
+        "textDecoration": "none",
+      }
+    }
+  >
+    <div
+      className="sc-AykKE jDVYoJ"
+      onClick={[Function]}
+    >
+      <h1
+        className="sc-AykKC flIKka"
+      >
+        Jude Gibson Byers
+      </h1>
+      <img
+        alt="Video titled Jude Gibson Byers"
+        className="sc-AykKD kcIegN"
+        src="images/videos/Jude-Gibson-Byers.jpg"
+      />
+    </div>
+  </a>
+  <a
+    href="/video"
+    onClick={[Function]}
+    style={
+      Object {
+        "color": "black",
+        "textDecoration": "none",
+      }
+    }
+  >
+    <div
+      className="sc-AykKE jDVYoJ"
+      onClick={[Function]}
+    >
+      <h1
+        className="sc-AykKC flIKka"
+      >
+        Kathryn Hecht
+      </h1>
+      <img
+        alt="Video titled Kathryn Hecht"
+        className="sc-AykKD kcIegN"
+        src="images/videos/Kathryn-Hecht.jpg"
+      />
+    </div>
+  </a>
+  <a
+    href="/video"
+    onClick={[Function]}
+    style={
+      Object {
+        "color": "black",
+        "textDecoration": "none",
+      }
+    }
+  >
+    <div
+      className="sc-AykKE jDVYoJ"
+      onClick={[Function]}
+    >
+      <h1
+        className="sc-AykKC flIKka"
+      >
+        Leanne Fogg
+      </h1>
+      <img
+        alt="Video titled Leanne Fogg"
+        className="sc-AykKD kcIegN"
+        src="images/videos/Leanne-Fogg.jpg"
+      />
+    </div>
+  </a>
+  <div
+    className="spacer"
+    style={
+      Object {
+        "flexGrow": "1",
+      }
+    }
+  />
+</div>
+`;

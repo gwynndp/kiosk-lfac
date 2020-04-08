@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a TextPage 1`] = `
+Array [
+  <div
+    className="sc-AykKC duquAX"
+  >
+    <a
+      className="sc-AykKD dWbVqE"
+      exact="true"
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="home"
+        src="images/kiosk_home.png"
+        width="100px"
+      />
+    </a>
+  </div>,
+  <div
+    className="sc-AykKH eRVEGl"
+  >
+    <header
+      className="sc-AykKI knYcmi"
+    >
+      <h1>
+        Valley of the Moon Children's Foundation
+      </h1>
+    </header>
+    <div
+      className="sc-AykKJ ljPQPk"
+    >
+      &lt;img src="images/vom-logo.png" alt="" width="200" height="164" /&gt;\\n&lt;p&gt;Judge Arnold Rosenfeld formed the Valley of the Moon Foundation in 1994.  It’s mission is “in partnership with the Valley of the Moon Children’s Home and the Redwood Children’s Center to positively impact the present and future lives of the abused, abandoned, and neglected children in Sonoma County and to assure the children we serve positive opportunities to aid them to become productive, equal members of the community”.&lt;/p&gt;\\n
+    </div>
+  </div>,
+  <div
+    className="sc-AykKF cvNFcn"
+  >
+    <div
+      id="logos-wrapper"
+      style={
+        Object {
+          "display": "flex",
+          "flexDirection": "column",
+          "justifyContent": "space-between",
+          "padding": "0 10px 20px 0",
+        }
+      }
+    >
+      <img
+        alt="Cloverdale City logo"
+        src="images/cloverdale-city-logo.png"
+        width="100%"
+      />
+      <img
+        alt="Cloverdale High School logo"
+        src="images/cloverdale-hs-logo.png"
+        width="100%"
+      />
+      <img
+        alt="Listening For a Change logo"
+        src="images/lfac_logo_black.gif"
+        width="100%"
+      />
+    </div>
+    <a
+      className="sc-AykKG esZqhL"
+      href="/lfac"
+      onClick={[Function]}
+    >
+      <span>
+        Listening for a Change
+      </span>
+    </a>
+    <a
+      className="sc-AykKG esZqhL"
+      href="/schools"
+      onClick={[Function]}
+    >
+      <span>
+        Schools
+      </span>
+    </a>
+    <a
+      className="sc-AykKG esZqhL"
+      href="/fires"
+      onClick={[Function]}
+    >
+      <span>
+        Fire Stories
+      </span>
+    </a>
+    <a
+      className="sc-AykKG esZqhL"
+      href="/jackdemayo"
+      onClick={[Function]}
+    >
+      <span>
+        Remembering Jack DeMayo
+      </span>
+    </a>
+    <a
+      className="sc-AykKG esZqhL"
+      href="/vom"
+      onClick={[Function]}
+    >
+      <span>
+        Valley of the Moon
+      </span>
+    </a>
+  </div>,
+]
+`;

@@ -1,0 +1,280 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a GalleryPage 1`] = `
+Array [
+  <div
+    className="sc-AykKE heQrPx"
+  >
+    <a
+      className="sc-AykKF igZHWa"
+      exact="true"
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="home"
+        src="images/kiosk_home.png"
+        width="100px"
+      />
+    </a>
+    <button
+      className="sc-AykKG kmyBlL"
+      id="prev"
+      onClick={[Function]}
+    >
+      <div>
+        PREV
+      </div>
+      <img
+        alt="scroll up"
+        src="images/kiosk_arrow_up.png"
+        width="100px"
+      />
+    </button>
+    <button
+      className="sc-AykKG kmyBlL"
+      id="next"
+      onClick={[Function]}
+    >
+      <img
+        alt="scroll down"
+        src="images/kiosk_arrow_down.png"
+        width="100px"
+      />
+      <div>
+        NEXT
+      </div>
+    </button>
+  </div>,
+  <div
+    className="sc-fzXfLO ithJqC"
+  >
+    <header
+      className="sc-fzXfLP kFpmZD"
+    >
+      <h1>
+        Meet the People
+      </h1>
+    </header>
+    <div
+      className="sc-AykKK ivNex"
+      id="gallery"
+    >
+      <a
+        href="/video"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "black",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="sc-AykKJ iyPTLm"
+          onClick={[Function]}
+        >
+          <h1
+            className="sc-AykKH gGLGOn"
+          >
+            Ashley Sanchez
+          </h1>
+          <img
+            alt="Video titled Ashley Sanchez"
+            className="sc-AykKI kjrCmu"
+            src="images/videos/Ashley-Sanchez.jpg"
+          />
+        </div>
+      </a>
+      <a
+        href="/video"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "black",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="sc-AykKJ iyPTLm"
+          onClick={[Function]}
+        >
+          <h1
+            className="sc-AykKH gGLGOn"
+          >
+            Jackie Rose Wilson
+          </h1>
+          <img
+            alt="Video titled Jackie Rose Wilson"
+            className="sc-AykKI kjrCmu"
+            src="images/videos/Jackie-Rose-Wilson.jpg"
+          />
+        </div>
+      </a>
+      <a
+        href="/video"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "black",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="sc-AykKJ iyPTLm"
+          onClick={[Function]}
+        >
+          <h1
+            className="sc-AykKH gGLGOn"
+          >
+            Jude Gibson Byers
+          </h1>
+          <img
+            alt="Video titled Jude Gibson Byers"
+            className="sc-AykKI kjrCmu"
+            src="images/videos/Jude-Gibson-Byers.jpg"
+          />
+        </div>
+      </a>
+      <a
+        href="/video"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "black",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="sc-AykKJ iyPTLm"
+          onClick={[Function]}
+        >
+          <h1
+            className="sc-AykKH gGLGOn"
+          >
+            Kathryn Hecht
+          </h1>
+          <img
+            alt="Video titled Kathryn Hecht"
+            className="sc-AykKI kjrCmu"
+            src="images/videos/Kathryn-Hecht.jpg"
+          />
+        </div>
+      </a>
+      <a
+        href="/video"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "black",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <div
+          className="sc-AykKJ iyPTLm"
+          onClick={[Function]}
+        >
+          <h1
+            className="sc-AykKH gGLGOn"
+          >
+            Leanne Fogg
+          </h1>
+          <img
+            alt="Video titled Leanne Fogg"
+            className="sc-AykKI kjrCmu"
+            src="images/videos/Leanne-Fogg.jpg"
+          />
+        </div>
+      </a>
+      <div
+        className="spacer"
+        style={
+          Object {
+            "flexGrow": "1",
+          }
+        }
+      />
+    </div>
+  </div>,
+  <div
+    className="sc-AykKC gVzywQ"
+  >
+    <div
+      id="logos-wrapper"
+      style={
+        Object {
+          "display": "flex",
+          "flexDirection": "column",
+          "justifyContent": "space-between",
+          "padding": "0 10px 20px 0",
+        }
+      }
+    >
+      <img
+        alt="Cloverdale City logo"
+        src="images/cloverdale-city-logo.png"
+        width="100%"
+      />
+      <img
+        alt="Cloverdale High School logo"
+        src="images/cloverdale-hs-logo.png"
+        width="100%"
+      />
+      <img
+        alt="Listening For a Change logo"
+        src="images/lfac_logo_black.gif"
+        width="100%"
+      />
+    </div>
+    <a
+      className="sc-AykKD bhXdAw"
+      href="/lfac"
+      onClick={[Function]}
+    >
+      <span>
+        Listening for a Change
+      </span>
+    </a>
+    <a
+      className="sc-AykKD bhXdAw"
+      href="/schools"
+      onClick={[Function]}
+    >
+      <span>
+        Schools
+      </span>
+    </a>
+    <a
+      className="sc-AykKD bhXdAw"
+      href="/fires"
+      onClick={[Function]}
+    >
+      <span>
+        Fire Stories
+      </span>
+    </a>
+    <a
+      className="sc-AykKD bhXdAw"
+      href="/jackdemayo"
+      onClick={[Function]}
+    >
+      <span>
+        Remembering Jack DeMayo
+      </span>
+    </a>
+    <a
+      className="sc-AykKD bhXdAw"
+      href="/vom"
+      onClick={[Function]}
+    >
+      <span>
+        Valley of the Moon
+      </span>
+    </a>
+  </div>,
+]
+`;
