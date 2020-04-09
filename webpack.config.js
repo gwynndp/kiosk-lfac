@@ -1,6 +1,7 @@
 const path = require("path");
 
 module.exports = {
+  mode: "development",
   context: __dirname,
   entry: "./app/index.jsx",
   output: {
@@ -10,6 +11,11 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx", ".json"]
   },
+  performance: {
+    hints: "warning"
+  },
+  devtool: "source-map",
+  target: "web",
   stats: {
     colors: true,
     reasons: true,

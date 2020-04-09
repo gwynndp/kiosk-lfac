@@ -46,7 +46,6 @@ function handleScrollNext(e) {
 }
 
 export default function MainNav({ gallery }) {
-  console.log("INSIDE MAIN NAV", gallery);
   return (
     <Nav>
       <ButtonLink exact="true" to="/">

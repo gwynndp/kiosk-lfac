@@ -9,8 +9,8 @@
     "test": "jest",
     "format": "prettier --write --single-quote --print-width=120 --tab-width=2 \"app/**/*.{js,jsx}\"",
     "lint": "eslint \"**/*.jsx\" --quiet",
-    "watch:build": "webpack -- --mode development --watch",
-    "build": "webpack -- --mode production"
+    "watch:build": "webpack --mode development --watch",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -25,9 +25,7 @@
       "jsx"
     ],
     "moduleDirectories": [
-      "node_modules",
-      "bower_components",
-      "shared"
+      "node_modules"
     ]
   },
   "author": "Gwynn Dandridge-Perry",
