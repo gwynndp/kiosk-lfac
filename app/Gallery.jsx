@@ -15,7 +15,6 @@ const StyledGallery = styled.div`
 `;
 
 export default function Gallery({ videos, handleVideoCardClick }) {
-  console.log('INSIDE GALLERY: ', videos[0]);
   return (
     <StyledGallery id="gallery">
       {videos.map(video => {

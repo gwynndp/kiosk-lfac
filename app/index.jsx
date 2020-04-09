@@ -68,7 +68,9 @@ class Main extends React.Component {
   }
 
   updateCurrentVideo(vidId) {
-    this.setState(state => ({ currentVideo: state.videos[vidId] }));
+    this.setState(state => ({
+      currentVideo: state.videos.find(vid => vid.id === vidId)
+    }));
   }
 
   handleVideoCardClick(video) {
