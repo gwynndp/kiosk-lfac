@@ -1,9 +1,9 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import renderer from 'react-test-renderer';
-import TextPage from '../TextPage';
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import renderer from "react-test-renderer";
+import TextPage from "../TextPage";
 
-test('should render a TextPage', () => {
+test("should render a TextPage", () => {
   const props = {
     page: {
       title: "Valley of the Moon Children's Foundation",

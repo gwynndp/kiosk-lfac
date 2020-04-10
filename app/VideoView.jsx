@@ -33,10 +33,8 @@ function handlePrevNext(vidId, listLength, updateCurrentVideo, diff) {
   let newVid = 0;
   if (diff > 0) {
     newVid = currVid < listLength - 1 ? currVid + 1 : 0;
-    console.log("VIDEOVIEW: current - ", vidId, "next - ", newVid);
   } else {
     newVid = currVid > 0 ? currVid - 1 : listLength - 1;
-    console.log("VIDEOVIEW: current - ", vidId, "prev - ", newVid);
   }
   updateCurrentVideo(newVid);
 }
@@ -94,15 +92,13 @@ export default function VideoView({ video, listLength, updateCurrentVideo }) {
         >
           <Button
             onClick={() =>
-              handlePrevNext(video.id, listLength, updateCurrentVideo, -1)
-            }
+              handlePrevNext(video.id, listLength, updateCurrentVideo, -1)}
           >
             Previous
           </Button>
           <Button
             onClick={() =>
-              handlePrevNext(video.id, listLength, updateCurrentVideo, 1)
-            }
+              handlePrevNext(video.id, listLength, updateCurrentVideo, 1)}
           >
             Next
           </Button>

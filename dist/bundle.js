@@ -708,11 +708,88 @@ var PageHeader = _styledComponents2["default"].header(_templateObject2());
 
 var Content = _styledComponents2["default"].div(_templateObject3());
 
+var LfacContent = function LfacContent() {
+  return /*#__PURE__*/_react2["default"].createElement("section", null, /*#__PURE__*/_react2["default"].createElement("img", {
+    src: "images/kiosk_lfac_home.jpg",
+    alt: "Mobile Kiosk",
+    width: "441",
+    height: "400"
+  }), /*#__PURE__*/_react2["default"].createElement("p", null, "Storytelling offers a unique and familiar way for students to engage with one another and with community members to lay the foundation for developing healthy relationships. Listening for a Change is built on the conviction that we are all\xA0", /*#__PURE__*/_react2["default"].createElement("em", null, "Creating Connections--One Story at a Time"), " and it is imperative we find meaningful ways to understand and appreciate the colorful\xA0and complex people and cultures around\xA0us."), /*#__PURE__*/_react2["default"].createElement("p", null, "Oral history interviewing is an effective way to teach communication skills and promote youth connectedness. Learning how to be a better listener, ask questions, and communicate with others across differences provides youth with the social emotional skills to positively engage with their family, peers, teachers, and the community-at-large as well as tools to overcome obstacles on their journey to adulthood."), /*#__PURE__*/_react2["default"].createElement("p", null, "For the community members who come to the schools to share their stories and wisdom, they are honored by being seen, heard, understood, and respected. Through video recording, these excerpts of their stories\xA0are being shared with the larger community."), /*#__PURE__*/_react2["default"].createElement("img", {
+    src: "/images/lfac_logo_black.gif",
+    alt: "Listening For a Change logo",
+    width: "60%"
+  }));
+};
+
+var VomContent = function VomContent() {
+  return /*#__PURE__*/_react2["default"].createElement("section", null, /*#__PURE__*/_react2["default"].createElement("img", {
+    src: "images/vom-logo.png",
+    alt: "Valley of the Moon",
+    width: "200",
+    height: "164"
+  }), /*#__PURE__*/_react2["default"].createElement("p", null, "Judge Arnold Rosenfeld formed the Valley of the Moon Foundation in 1994.\xA0It\u2019s mission is \u201Cin partnership with the Valley of the Moon Children\u2019s Home and the Redwood Children\u2019s Center to positively impact the present and future lives of the abused, abandoned, and neglected children in Sonoma County and to assure the children we serve positive opportunities to aid them to become productive, equal members of the community\u201D."), /*#__PURE__*/_react2["default"].createElement("p", null, "As a private board made up solely of volunteers the Foundation took on the unique role of partnering with a public entity to help raise funds to build a new Children\u2019s Home as their first priority. The Foundation has plans to expand its support for children through four key focus areas:"), /*#__PURE__*/_react2["default"].createElement("ul", null, /*#__PURE__*/_react2["default"].createElement("li", null, "Continued supplemental support for the children at Valley of the Moon Children\u2019s Home."), /*#__PURE__*/_react2["default"].createElement("li", null, "Support for emancipated children including education, housing and employment guidance."), /*#__PURE__*/_react2["default"].createElement("li", null, "Support for children in foster care and foster parents."), /*#__PURE__*/_react2["default"].createElement("li", null, "Community child abuse prevention.")), /*#__PURE__*/_react2["default"].createElement("p", null, "Through tireless volunteer hours the Valley of the Moon Foundation has helped to create a safe haven for children. What they have done is not just help build a building, but raised awareness of the issues that affect abused, neglected, and abandoned children in our community so that support from individuals, businesses, and organizations is on-going. Their work is a reminder that even in wealthy communities such as Sonoma County, we must come together to meet the needs of those who can\u2019t help themselves."));
+};
+
+var SchoolsContent = function SchoolsContent() {
+  return /*#__PURE__*/_react2["default"].createElement("section", null, /*#__PURE__*/_react2["default"].createElement("p", null, "Through the process of story, questioning, and reflection, students dispel the notions of otherness and lay a foundation for eliminating bullying and violence. Hearing the experiences, advice, and wisdom of interviewees, students gain new insight and options for transformative change and empowerment. The Neighborhood Listening Project thus effectively integrates equity and social justice studies into existing school curricula."), /*#__PURE__*/_react2["default"].createElement("img", {
+    src: "images/schools/nlp_rup-190x100.jpg",
+    alt: "Roseland University Prep",
+    width: "190",
+    height: "100"
+  }), /*#__PURE__*/_react2["default"].createElement("strong", null, "Roseland University Prep:"), /*#__PURE__*/_react2["default"].createElement("p", null, "Starting in February 2012, Listening for a Change implemented the Neighborhood Listening Project in all four tenth-grade AVID (Advancing Via Individual Determination) classes."), /*#__PURE__*/_react2["default"].createElement("strong", null, "Sonoma Country Day School"), /*#__PURE__*/_react2["default"].createElement("strong", null, "Santa Rosa Accelerated Charter School"), /*#__PURE__*/_react2["default"].createElement("img", {
+    src: "images/schools/nlp_piner-190x100.jpg",
+    alt: "Piner High School",
+    width: "190",
+    height: "100"
+  }), /*#__PURE__*/_react2["default"].createElement("strong", null, "Piner High School:"), /*#__PURE__*/_react2["default"].createElement("p", null, "From January of 2012, Listening for a Change collaborated with Michael Doucette and his Drama students to create an innovative arts program integrating oral history and drama."), /*#__PURE__*/_react2["default"].createElement("img", {
+    src: "images/schools/nlp_kawana-190x100.jpg",
+    alt: "Kawana Academy of Arts and Sciences and Sonoma Academy",
+    width: "190",
+    height: "100"
+  }), /*#__PURE__*/_react2["default"].createElement("strong", null, "Kawana Academy of Arts and Sciences & Sonoma Academy:"), /*#__PURE__*/_react2["default"].createElement("p", null, "In the 2013-2014 school year, 6th graders from KAAS and 11th/12th graders from SA interviewed people from both communities who shared experiences related to immigration and overcoming obstacles to be successful."));
+};
+
+var JackDeMayoContent = function JackDeMayoContent() {
+  return /*#__PURE__*/_react2["default"].createElement("section", null, /*#__PURE__*/_react2["default"].createElement("video", {
+    track: null,
+    controls: true,
+    src: "videos/Jack-DeMeo.mp4",
+    poster: "",
+    style: {
+      flexShrink: "1",
+      flexGrow: "1",
+      width: "100%"
+    },
+    autoPlay: true,
+    allowFullScreen: true,
+    title: "Remembering Jack DeMayo"
+  }));
+};
+
+function getContent(page) {
+  switch (page) {
+    case "lfac":
+      return /*#__PURE__*/_react2["default"].createElement(LfacContent, null);
+
+    case "vom":
+      return /*#__PURE__*/_react2["default"].createElement(VomContent, null);
+
+    case "schools":
+      return /*#__PURE__*/_react2["default"].createElement(SchoolsContent, null);
+
+    case "jackdemayo":
+      return /*#__PURE__*/_react2["default"].createElement(JackDeMayoContent, null);
+
+    default:
+      return /*#__PURE__*/_react2["default"].createElement("div", null, "\"Whoops! There doesn't seem to be content for this page.\"");
+  }
+}
+
 function TextPage(_ref) {
   var page = _ref.page;
   return /*#__PURE__*/_react2["default"].createElement(_react2["default"].Fragment, null, /*#__PURE__*/_react2["default"].createElement(_MainNav2["default"], {
     gallery: "false"
-  }), /*#__PURE__*/_react2["default"].createElement(PageWrapper, null, /*#__PURE__*/_react2["default"].createElement(PageHeader, null, /*#__PURE__*/_react2["default"].createElement("h1", null, page.title)), /*#__PURE__*/_react2["default"].createElement(Content, null, page.content)), /*#__PURE__*/_react2["default"].createElement(_Sidebar2["default"], null));
+  }), /*#__PURE__*/_react2["default"].createElement(PageWrapper, null, /*#__PURE__*/_react2["default"].createElement(PageHeader, null, /*#__PURE__*/_react2["default"].createElement("h1", null, page.title)), /*#__PURE__*/_react2["default"].createElement(Content, null, getContent(page.content))), /*#__PURE__*/_react2["default"].createElement(_Sidebar2["default"], null));
 }
 
 TextPage.propTypes = {
@@ -796,10 +873,8 @@ function handlePrevNext(vidId, listLength, updateCurrentVideo, diff) {
 
   if (diff > 0) {
     newVid = currVid < listLength - 1 ? currVid + 1 : 0;
-    console.log("VIDEOVIEW: current - ", vidId, "next - ", newVid);
   } else {
     newVid = currVid > 0 ? currVid - 1 : listLength - 1;
-    console.log("VIDEOVIEW: current - ", vidId, "prev - ", newVid);
   }
 
   updateCurrentVideo(newVid);
